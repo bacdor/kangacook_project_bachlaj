@@ -5,7 +5,9 @@ import React from "react";
 function Header() {
   return (
     <header>
-      <h1>Header</h1>
+      <div class="navbar bg-base-100">
+        <a class="btn btn-ghost text-xl">daisyUI</a>
+      </div>
     </header>
   );
 }
