@@ -8,10 +8,10 @@ import AnimalList from "../components/AnimalList";
 function MainPage() {
   return (
     <div class="flex w-full">
-      <div class="grid flex-grow w-1/2 place-items-center">
+      <div class="flex-grow w-1/2 place-items-center">
         <AddAnimalForm />
       </div>
-      <div class="grid flex-grow place-items-center">
+      <div class="flex-grow w-1/2 place-items-center">
         <AnimalList />
       </div>
     </div>

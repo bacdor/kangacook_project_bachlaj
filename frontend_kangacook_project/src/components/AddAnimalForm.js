@@ -11,7 +11,6 @@ const AddAnimalForm = () => {
   const [success, setSuccess] = useState(null);
 
   const handleSubmit = async (e) => {
-    // e.preventDefault();
     const newAnimal = {
       name: name,
       color: color,
