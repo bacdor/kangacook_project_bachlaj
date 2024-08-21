@@ -6,7 +6,7 @@ function Header() {
   return (
     <header>
       <div class="navbar bg-base-100">
-        <a class="btn btn-ghost text-xl">daisyUI</a>
+        <a class="btn text-xl">Kangacook Bachlaj Project - Animal List</a>
       </div>
     </header>
   );

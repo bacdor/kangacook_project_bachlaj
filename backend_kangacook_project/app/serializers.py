@@ -4,4 +4,4 @@ from .models import Animal
 class AnimalSerializer(serializers.ModelSerializer):
     class Meta:
         model = Animal
-        fields = ['id', 'name', 'color', 'legs_count', 'is_mammal', 'description']
+        fields = ['id', 'name', 'color', 'legs_count', 'description']
