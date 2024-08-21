@@ -7,11 +7,11 @@ import AnimalList from "../components/AnimalList";
 
 function MainPage() {
   return (
-    <div class="flex w-full">
-      <div class="flex-grow w-1/2 place-items-center">
+    <div className="flex w-full">
+      <div className="flex-grow w-1/2 justify-center items-center m-4">
         <AddAnimalForm />
       </div>
-      <div class="flex-grow w-1/2 place-items-center">
+      <div className="flex-grow w-1/2 flex flex-col justify-center items-center m-4">
         <AnimalList />
       </div>
     </div>
