@@ -3,11 +3,7 @@ import React from "react";
 // import { useState, useEffect } from "react";
 
 function MainPage() {
-  return (
-    <div>
-      <h1>Hello world</h1>
-    </div>
-  );
+  return <h1 className="text-3xl font-bold underline">Hello world!</h1>;
 }
 
 export default MainPage;
