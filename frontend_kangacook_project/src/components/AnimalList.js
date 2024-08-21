@@ -48,19 +48,27 @@ const AnimalList = () => {
               <th>Description</th>
             </tr>
           </thead>
-          <tbody>
-            {animals.map((item, index) => (
-              <tr key={item.id} className={index % 2 === 0 ? "" : "hover"}>
-                <td>{item.name}</td>
-                <td>{item.color}</td>
-                <td>{item.legs_counts}</td>
-                <td>{item.description}</td>
-                <td>
-                  <button onClick={() => handleDelete(item.id)}>Delete</button>
-                </td>
-              </tr>
-            ))}
-          </tbody>
+          {animals.length > 0 ? (
+            <tbody>
+              {animals.map((item, index) => (
+                <tr key={item.id} className={index % 2 === 0 ? "" : "hover"}>
+                  <td>{item.name}</td>
+                  <td>{item.color}</td>
+                  <td>{item.legs_counts}</td>
+                  <td>{item.description}</td>
+                  <td>
+                    <button onClick={() => handleDelete(item.id)}>
+                      <b>✘</b>
+                    </button>
+                  </td>
+                </tr>
+              ))}
+            </tbody>
+          ) : (
+            <p className="text-center text-gray-500">
+              No animals available. Add some animals to see them here.
+            </p>
+          )}
           {error && <div className="text-error">{error}</div>}
           {success && <div className="text-success">{success}</div>}
         </table>
