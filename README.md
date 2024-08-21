@@ -1,4 +1,4 @@
-# Favorite Animals Web Application
+# Animal List Web Application
 
 ![image](https://github.com/user-attachments/assets/e2b542e8-f38a-4db5-8e1c-7c5be5b125a0)
 
